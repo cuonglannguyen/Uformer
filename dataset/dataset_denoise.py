@@ -24,7 +24,7 @@ class DataLoaderTrain(Dataset):
         self.target_transform = target_transform
         
         gt_dir = 'groundtruth' 
-        input_dir = 'input'
+        input_dir = 'noisy'
         
         clean_files = sorted(os.listdir(os.path.join(rgb_dir, gt_dir)))
         noisy_files = sorted(os.listdir(os.path.join(rgb_dir, input_dir)))
